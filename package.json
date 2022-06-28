@@ -1,0 +1,24 @@
+{
+  "name": "Hack-The-Solution",
+  "version": "1.0.0",
+  "description": "This project is a Fitness website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushmasharma/Hack-The-Solution.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayushmasharma/Hack-The-Solution/issues"
+  },
+  "homepage": "https://github.com/ayushmasharma/Hack-The-Solution#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
