@@ -10,7 +10,7 @@ app.use(express.static("public"));
 
 //* Connection to MongoDB and Testing it
 mongoose.connect(
-  "mongodb+srv://Jnrlns:<password>@cluster0.uh93i.mongodb.net/Database",
+  "mongodb+srv://Jnrlns:741203Jll1998@cluster0.uh93i.mongodb.net/Database",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
