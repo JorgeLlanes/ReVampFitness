@@ -9,13 +9,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 //* Connection to MongoDB and Testing it
-mongoose.connect(
-  "mongodb+srv://Jnrlns:741203Jll1998@cluster0.uh93i.mongodb.net/tasks",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose.connect("", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const submitSchema = mongoose.Schema({
   fName: String,
