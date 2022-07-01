@@ -17,6 +17,12 @@ mongoose.connect(
   }
 );
 
+const newTask = {
+  excer: String,
+  setx: String,
+  sety: String,
+};
+
 const submitSchema = mongoose.Schema({
   fName: String,
   lName: String,
@@ -30,6 +36,7 @@ const submitSchema = mongoose.Schema({
   promo: String,
 });
 
+const tasks = mongoose.model("tasks", newTask);
 const submitForm = mongoose.model("submitForm", submitSchema);
 
 app.post("/contact", (req, res) => {
@@ -47,6 +54,26 @@ app.post("/contact", (req, res) => {
   });
   newSubmitForm.save();
   res.redirect("/contact.html");
+});
+
+app.post("/", (req, res) => {
+  let taskOne = new tasks({
+    excer: req.body.excer,
+    setx: req.body.setx,
+    sety: req.body.sety,
+  });
+  taskOne.save();
+  // res.redirect("/classes.html");
+});
+
+app.get("/listtask", (req, res) => {
+  tasks.find(function (err, response) {
+    if (err) {
+      throw err;
+    } else {
+      res.send({ status: 200, message: response });
+    }
+  });
 });
 
 // var db = mongoose.connection;
