@@ -2,14 +2,13 @@
  We are aiming to tackle the health issues in the united states by creating a full-stack application that removes the barrier of entry to working out and improving one's health. In our application, we create workout plans based on the user's goals, using a inner API and third-party API.
 
 ## **Software Engineers / Creators**
----
+
 - #### **Ismael V**
 - #### **Dominic M**
 - #### **Chris MP**
 - #### **Jorge L**
 
 ## **Getting Started**
----
 Clone and download this repo onto your local machine. Once you have done this, install the node packages. You can do this by running **```npm init```** on your comman line. After accepting, install the following dependencies **```npm i express mongoose mongodb body-parser```**.
 
 
@@ -23,11 +22,9 @@ In your terminal, run **```npm run nodemon```** this will start the server and a
 Example app listening on port 3000
 ```
 ## **Stopping the server / app**
----
 To stop running the server and the app hit **```Control + C```** that should stop the server and app.
 
 ## **Built with**
----
 * [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) - The Structure of webpage.
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Styleing of webpage.
 * [MongoDB](https://www.mongodb.com/) - The document database used.
@@ -50,5 +47,4 @@ To stop running the server and the app hit **```Control + C```** that should sto
 ![Screenshot (39)](https://user-images.githubusercontent.com/49052244/140564915-d2b06529-6898-42fb-903e-fab51c64712a.png)
 
 ## **License**
----
 This project is licensed under the MIT license - see the [LICENSE](../LICENSE) file for details.
