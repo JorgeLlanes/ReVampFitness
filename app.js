@@ -53,7 +53,7 @@ app.post("/contact", (req, res) => {
     promo: req.body.promo,
   });
   newSubmitForm.save();
-  res.redirect("/contact.html");
+  res.redirect("/contact1.html");
 });
 
 app.post("/", (req, res) => {
