@@ -9,10 +9,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 //* Connection to MongoDB and Testing it
-mongoose.connect("", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  "mongodb+srv://Jnrlns:741203Jll1998@cluster0.uh93i.mongodb.net/Database",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
+
+const newTask = {
+  excer: String,
+  setx: String,
+  sety: String,
+};
 
 const submitSchema = mongoose.Schema({
   fName: String,
@@ -27,6 +36,7 @@ const submitSchema = mongoose.Schema({
   promo: String,
 });
 
+const tasks = mongoose.model("tasks", newTask);
 const submitForm = mongoose.model("submitForm", submitSchema);
 
 app.post("/contact", (req, res) => {
@@ -44,6 +54,26 @@ app.post("/contact", (req, res) => {
   });
   newSubmitForm.save();
   res.redirect("/contact.html");
+});
+
+app.post("/", (req, res) => {
+  let taskOne = new tasks({
+    excer: req.body.excer,
+    setx: req.body.setx,
+    sety: req.body.sety,
+  });
+  taskOne.save();
+  // res.redirect("/classes.html");
+});
+
+app.get("/listtask", (req, res) => {
+  tasks.find(function (err, response) {
+    if (err) {
+      throw err;
+    } else {
+      res.send({ status: 200, message: response });
+    }
+  });
 });
 
 // var db = mongoose.connection;
