@@ -29,7 +29,8 @@ To stop running the server and the app hit **```Control + C```** that should sto
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Styleing of webpage.
 * [MongoDB](https://www.mongodb.com/) - The document database used.
 * [Mongoose](https://mongoosejs.com/docs/) - Object Data Modeling (ODM) library for MongoDB and Node.js.
-* [API]() - Application Programming Interfaces used.
+* [API](https://www.programmableweb.com/api/exercisedb-rest-api-v10) - Application Programming Interfaces used.
+* [API2](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb/) - Second Application Programming Interfaces used.
 * [Node.js](https://nodejs.org/en/) - The development for server.
 * [Express.js](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs) - Used tp create endpoints. 
 
