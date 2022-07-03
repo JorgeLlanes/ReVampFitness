@@ -39,6 +39,7 @@ const submitSchema = mongoose.Schema({
 const tasks = mongoose.model("tasks", newTask);
 const submitForm = mongoose.model("submitForm", submitSchema);
 
+//* Create w/ MongoDB
 app.post("/contact", (req, res) => {
   let newSubmitForm = new submitForm({
     fName: req.body.fName,
@@ -56,6 +57,7 @@ app.post("/contact", (req, res) => {
   res.redirect("/contact1.html");
 });
 
+//* Create w/ MongoDB
 app.post("/", (req, res) => {
   let taskOne = new tasks({
     excer: req.body.excer,
@@ -66,6 +68,7 @@ app.post("/", (req, res) => {
   // res.redirect("/classes.html");
 });
 
+//* READ w/ MongoDB Postman  (R.E.S.T API)
 app.get("/listtask", (req, res) => {
   tasks.find(function (err, response) {
     if (err) {
@@ -76,44 +79,31 @@ app.get("/listtask", (req, res) => {
   });
 });
 
-// var db = mongoose.connection;
+//* UPDATE w/ MongoDB Postman
+app.put("/update", (req, res) => {
+  const id = req.query.id;
+  const newExcer = req.query.excer;
+  tasks.findByIdAndUpdate(id, { excer: newExcer }, function (err, response) {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send({ status: 200, tasks: response });
+    }
+  });
+});
 
-// db.on("error", () => console.log("Error in connecting to Database"));
-// db.once("open", () => console.log("Connected to Database"));
+//! DELETE w/ MongoDB Postman
+app.delete("/deleteTask", function (req, res) {
+  const id = req.query.id;
 
-// app.post("/contact", (req, res) => {
-//   var fName = req.body.fName;
-//   var lName = req.body.lName;
-//   var email = req.body.email;
-//   var phone = req.body.phone;
-//   var interest1 = req.body.interest1;
-//   var interest2 = req.body.interest2;
-//   var interest3 = req.body.interest3;
-//   var reference = req.body.reference;
-//   var questions = req.body.questions;
-//   var promo = req.body.promo;
-
-//   var data = {
-//     fName: fName,
-//     lName: lName,
-//     email: email,
-//     phone: phone,
-//     interest1: interest1,
-//     interest2: interest2,
-//     interest3: interest3,
-//     reference: reference,
-//     questions: questions,
-//     promo: promo,
-//   };
-
-//   db.collection("user").insertOne(data, (err, collection) => {
-//     if (err) {
-//       throw err;
-//     }
-//     console.log("Recored inserted Successfully");
-//   });
-//   return res.redirect("contact.html");
-// });
+  tasks.findByIdAndDelete(id, function (err, response) {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send({ status: 200, task: response });
+    }
+  });
+});
 
 app.get("/", (req, res) => {
   res.set({
