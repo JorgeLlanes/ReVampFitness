@@ -1,12 +1,9 @@
-
-
 body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
 
-/* Style Rules for body and images */
 body {
 	background-color: #000;
 }
@@ -22,7 +19,6 @@ img, video {
 	box-sizing: border-box;
 }
 
-
 /* header css */
 header {
 	top: 0;
@@ -32,7 +28,7 @@ header {
 
 header img {
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 0x;
 	margin-left: -5px;
 	width: 50%;
 }
@@ -69,9 +65,6 @@ main {
 	font-family: 'Roboto Slab', serif;
 }
 
-video {
-	margin: 0 auto 4%;
-}
 
 .mobile h3 {
 	text-shadow: 5px 5px 8px #ccc;
@@ -93,68 +86,8 @@ article ul {
 	margin-left: 10%;
 }
 
-article:nth-of-type(2) {
-	background-color: rgba(204, 204, 204, 0.3);
-}
-
-.tel-link {
-	background-color: #404040;
-	padding: 2%;
-	margin: 0 auto;
-	width: 80%;
-	text-align: center;
-	border-radius: 5px;
-}
-
-.tel-link a {
-	color: #fff;
-	text-decoration: none;
-	font-size: 1.5em;
-	display: block;
-}
-
 .hours {
 	margin-left: 10%;
-}
-
-.action {
-	font-size: 1.35em;
-	color: #666600;
-	font-weight: bold;
-	text-shadow: 5px 5px 8px #ccc;
-}
-
-.frame {
-	position: relative;
-	max-width: 450px;
-	margin: 2% auto;
-}
-
-.pic-text {
-	position: absolute;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.5);
-	color: #fff;
-	width: 100%;
-	padding: 20px;
-	text-align: center;
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 1.5em;
-	font-weight: bold;
-}
-
-#weights, #cardio, #training {
-	margin: 0 2%;
-}
-
-.round {
-	border-radius: 8px;
-}
-
-.external-link {
-	color: #666600;
-	font-weight: bold;
-	text-decoration: none;
 }
 
 #contact {
@@ -166,46 +99,10 @@ article:nth-of-type(2) {
 	text-decoration: none;
 }
 
-.map {
-	border: 2px solid #000;
-	width: 95%;
-	height: 50%;
-}
-
-#form {
-	margin-top: 2%;
-	background-color: #f2f2f2;
-	padding: 2%;
-}
-
-#form h2 {
-	text-align: center;
-}
-
-fieldset, input, select, textarea {
-	margin-bottom: 2%;
-}
-
-fieldset legend {
-	font-weight: bold;
-	font-size: 1.25em;
-}
-
 label {
 	display: block;
 	padding-top: 3%;
 }
-
-form #submit {
-	margin: 0 auto;
-	border: none;
-	display: block;
-	padding: 2%;
-	background-color: #b3b3b3;
-	font-size: 1em;
-	border-radius: 10px;
-}
-
 
 footer .copyright {
 	font-size: 0.75em;
@@ -244,6 +141,7 @@ nav {
 nav ul {
 	list-style-type: none;
 	text-align: center; 
+	margin-top: -40px;
 }
 
 nav li {
@@ -277,7 +175,6 @@ main ul {
 	grid-gap: 20px;
 }
 
-
 aside {
 	text-align: center;
 	font-size: 1.25em;
@@ -289,100 +186,8 @@ aside {
 	text-shadow: 5px 5px 5px #b3b3b3;
 	border-radius: 0 15px;
 }
-	
-.grid-item4 {
-	grid-column: 1 / span 3;
 }
 
-#exercises {
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
-	background: linear-gradient(to right, #ccc, #fff);
-	background-color: #f2f2f2;
-	padding: 1% 2%;
-}
-
-#exercises dt {
-font-weight: bold;
-}
-
-#exercises dd {
-	padding: 0.5% 1% 2% 0;
-}
-
-.viewex {
-	font-weight: bold;
-	cursor: pointer;
-}
-
-#example {
-	display: none;
-}
-
-.tel-num {
-	font-size: 1.25em;
-}
-
-.map {
-	width: 600px;
-	height: 450px;
-}
-
-table {
-	border: 1px solid #000;
-	border-collapse: collapse;
-	margin: 0 auto;
-	width: 100%;
-}
-
-caption {
-	font-size: 1.5em;
-	font-weight: bold;
-	padding: 1%;
-}
-
-th, td {
-	border: 1px solid #000;
-	padding: 2%;
-}
-
-th {
-	background-color: #000;
-	color: #fff;
-	font-size: 1.15em;
-}
-
-tr:nth-child(odd) {
-	background-color: #ccc;
-}
-
-form {
-	width: 70%;
-	margin: 0 auto;
-}
-
-@-webkit-keyframes text-animation {
-	0% { font-size: 1em; }
-	50% { font-size: 2em; }
-	100% { font-size: 1.35em; }
-}
-
-@keyframes text-animation {
-	0% { font-size: 1em; }
-	50% { font-size: 2em; }
-	100% { font-size: 1.35em; }
-}
-/* 
-figcaption {
-	-webkit-animation-name: text-animation;
-	animation-name: text-animation;
-	-webkit-animation-delay: 3s;
-	animation-delay: 3s;
-	-webkit-animation-duration: 5s;
-	animation-duration: 5s;
-} */
-
-}
 @media screen and (min-width: 1015px), print {
 header {
 	width: 25%;
@@ -425,52 +230,6 @@ main h1 {
 article h3 {
 	font-size: 1.75em;
 }
-	
-.pic-text {
-	font-size: 1.5em;
-	padding: 20px;
-}
-	
-.frame {
-	opacity: 0.9;
-}
-	
-.frame:hover {
-	opacity: 1;
-	box-shadow: 8px 8px 10px #808080;
-	transform: translateY(10px);
-}
-	
-#weights, #cardio, #training {
-	width: 29%;
-	float: left;
-	margin: 0 2%;
-}
-	
-#exercises {
-	clear: left;
-}
-
-
-.offer:hover {
-	transform: scale(1.25);
-	cursor: pointer;
-}
-
-form {
-	width: auto;
-}
-
-.form-grid {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-gap: 20px;
-}
-
-.btn {
-	grid-column: 1 / span 3;
-}
-
 }
 
 @media screen and (min-width: 1921px) {
@@ -485,19 +244,18 @@ table {
 }
 
 @media print {
-	
 body {
 	background-color: #fff;
 	color: #000;
 }
-
 }
-@media  (max-width: 850px){
+
+@media  (max-width: 750px){
 	.tablet-photo{
 		display: none;
 	}
 	header img{
 		margin-left: 125px;
+		margin-top: 30px;
 	}
 }
-
