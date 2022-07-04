@@ -33,7 +33,7 @@ To stop running the server and the app hit **```Control + C```** that should sto
 * [API2](https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb/) - Second Application Programming Interface used.
 * [API3](https://rapidapi.com/spoonacular/api/recipe-food-nutrition/) - Third application Programming Interface used.
 * [Node.js](https://nodejs.org/en/) - The development for server.
-* [Express.js](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs) - Used tp create endpoints. 
+* [Express.js](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs) - Used to create endpoints. 
 
 ---
 ### **_Home page_**
