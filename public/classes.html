@@ -12,6 +12,7 @@
 	<link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+	<link rel="stylesheet" href="css/jorge.css">
 </head>
 <body>
 
@@ -66,63 +67,63 @@
 				<p>Zumba: MWF 7am &amp; 6pm</p>
 				
 			</div>
-			
-		<div class="tablet-desktop">
 		
-			<table> <!-- Start Table -->
+		<!-- <div class="tablet-desktop"> -->
+<!-- 		
+			<table> 
 				<caption>Group Fitness Class Schedule</caption>
-				<tr><!-- Row 1 -->
+				<tr>
 					<th>Class</th>
 					<th>Days</th>
 					<th>Times</th>
 					<th>Instructor</th>
 					<th>Room</th>
 				</tr>
-				<tr><!-- Row 2 -->
+				<tr> 
 					<td>Cardio</td>
 					<td>Mon, Wed, Fri</td>
 					<td>6:00am, 6:00pm</td>
 					<td>Schultz</td>
 					<td>B</td>
 				</tr>
-				<tr><!-- Row 3 -->
+				<tr>
 					<td>Boot Camp</td>
 					<td>Tue, Thu</td>
 					<td>5:00am, 5:00pm</td>
 					<td>Taylor</td>
 					<td>B</td>
 				</tr>
-				<tr><!-- Row 4 -->
+				<tr>
 					<td>Spinning</td>
 					<td>Tue, Thu</td>
 					<td>6:00am, 6:00pm</td>
 					<td>Roberts</td>
 					<td>A</td>
 				</tr>
-				<tr><!-- Row 5 -->
+				<tr>
 					<td>Kickboxing</td>
 					<td>Mon, Wed, Fri</td>
 					<td>8:00am, 7:15pm</td>
 					<td>Lawrence</td>
 					<td>A</td>
 				</tr>
-				<tr><!-- Row 6 -->
+				<tr>
 					<td>Yoga</td>
 					<td>Tue, Thu</td>
 					<td>6:00am, 6:00pm</td>
 					<td>Schultz</td>
 					<td>B</td>
 				</tr>
-				<tr><!-- Row 7 -->
+				<tr>
 					<td>Zumba</td>
 					<td>Mon, Wed, Fri</td>
 					<td>7:00am, 6:00pm</td>
 					<td>Roberts</td>
 					<td>A</td>
 				</tr>
-			</table> <!-- End Table -->
+			</table>
 			
-		</div>
+		</div> -->
 		
 		<div id="music-sample">
 		
@@ -136,7 +137,33 @@
 		</div>
 		
 		</main>
+
 		
+		/// Jorge
+		<form method="POST" action="/" class="form" id="formm">
+			<label id="lab">MUSCLE:
+				<input type="text" id="input" name="excer" placeholder="What is your task today?">
+			</label>
+			<h4>Sets</h4>
+          	<input type="text" id="pin1" name="setx" maxlength="4" size="4" placeholder="ex: 5"> x 
+          	<input type="text" id="pin2" name="sety" maxlength="4" size="4" placeholder="12"><br><br>
+
+          	<button type="submit" id="addButton">ADD</button>
+        </form>
+		
+		<div class="t">
+		  <table id="table">
+			<tr>
+			  <th>Muscle</th>
+			  <th>Sets</th>
+			  <th>Reps</th>
+			</tr>
+		  </table> 
+		</div>
+
+		<hr>
+
+		// Jorge
 		<!-- Use the footer area to add webpage footer content -->
 		<footer>
 		
@@ -155,6 +182,8 @@
 	</div>
 	
 	<script src="scripts/script.js"></script>
+	<script src="scripts/jorge.js"></script>
 	
 </body>
 </html>
+
