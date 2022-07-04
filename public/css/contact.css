@@ -2,13 +2,17 @@ body{
 	margin: 0;
 	padding: 0;
 	border: 0;
-	background-color: bisque;
+	background-color: rgb(20, 20, 20);
+	color: #f2f2f2;
 }
 
-.external-link {
-	color: #666600;
-	font-weight: bold;
-	text-decoration: none;
+#contact h4 .contact-email-link{
+	color: #d49009;
+
+}
+
+.num{
+	color: rgb(25, 68, 177);
 }
 
 #contact {
@@ -25,12 +29,6 @@ body{
 }
 
 
-
-#contact .contact-email-link {
-	color: #666600;
-	text-decoration: none;
-}
-
 .map {
 	border: 2px solid #000;
 	width: 70%;
@@ -42,7 +40,7 @@ body{
 	margin: auto;
 	width: 90%;
 	margin-top: 2%;
-	background-color: #f2f2f2;
+	background-color: #d49009a9;
 	padding: 2%;
 	margin-left: 2.5rem;
 	border-radius: 10px;
@@ -65,7 +63,7 @@ fieldset, input, select, textarea {
 	margin-bottom: 2%;
 	font-size: 20px;
 	border-radius: 10px;
-	border-color: rgb(184, 101, 0);
+	border-color: rgb(0, 0, 0);
 
 }
 
@@ -91,7 +89,7 @@ form #submit {
 	background-color: #4a2222;
 	font-size: 1.5rem;
 	border-radius: 20px;
-	color: #545426;
+	color: #ebebeb;
 }
 
 .form-flex{
