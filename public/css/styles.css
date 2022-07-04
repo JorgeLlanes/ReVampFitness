@@ -48,11 +48,11 @@ header img {
 	position: absolute;
 	right: 0;
 	top: 0;
-}
+} */
 
-.mobile {
+ .mobile {
 	display: block;
-}
+} 
 
 .tablet-desktop, #menu-links {
 	display: none;
