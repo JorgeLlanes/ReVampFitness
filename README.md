@@ -37,16 +37,16 @@ To stop running the server and the app hit **```Control + C```** that should sto
 
 ---
 ### **_Home page_**
-![Screenshot (36)](https://user-images.githubusercontent.com/49052244/140564837-70506819-0c19-4949-83d1-1b0ec067e9ff.png)
+![Screenshot (36)](WebSiteSS/Home.png)
 
 ### **_Workout page_**
-![Screenshot (37)](https://user-images.githubusercontent.com/49052244/140564851-25861b17-24fe-4600-b032-cda791f8aadf.png)
+![Screenshot (37)]()
 
 ### **_Nutrition page_**
-![Screenshot (38)](https://user-images.githubusercontent.com/49052244/140564884-a63deb47-6d2f-437e-a042-30de5075325b.png)
+![Screenshot (38)]()
 
 ### **_Contact page_**
-![Screenshot (39)](https://user-images.githubusercontent.com/49052244/140564915-d2b06529-6898-42fb-903e-fab51c64712a.png)
+![Screenshot (39)](WebSiteSS/Contact.png)
 
 ## **License**
 This project is licensed under the MIT license - see the [LICENSE](../LICENSE) file for details.
