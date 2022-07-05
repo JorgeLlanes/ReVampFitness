@@ -4,7 +4,8 @@
   "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/3075dd26-cf8b-4065-aa26-e6b13f23d635/deploy-status)](https://app.netlify.com/sites/friendly-hypatia-a25ed2/deploys)",
   "main": "app.js",
   "scripts": {
-    "nodemon": "nodemon app.js"
+    "nodemon": "nodemon app.js",
+    "start": "node backend/server.js"
   },
   "repository": {
     "type": "git",

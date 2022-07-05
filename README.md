@@ -47,3 +47,5 @@ To stop running the server and the app hit **```Control + C```** that should sto
 
 ## **License**
 This project is licensed under the MIT license - see the [LICENSE](../LICENSE) file for details.
+
+Jorge
