@@ -37,9 +37,22 @@ header {
 
 header img {
 	margin: 0 auto;
+<<<<<<< Updated upstream
+=======
+	margin-top: 10x;
+	margin-bottom: 50px;
+	margin-left: -5px;
+	width: 50%;
+>>>>>>> Stashed changes
 }
+#logo img{
+	width: 50px;
 
+<<<<<<< Updated upstream
 /* Style rule for hamburger menu */
+=======
+}
+>>>>>>> Stashed changes
 .mobile-nav a {
 	color: #fff;
 	font-family: 'Francois One', sans-serif;
