@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- This website template was created by: Christopher Deleon. September 27, 2021 -->
+<html lang="en">
+<head>
+	<title>Nutrition Guidance | Forward Fitness Club</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/nutrition.css">
+	<meta name="description" content="Forward Fitness Club provides nutrition guides and meal planning to help you meet your nutrition goals.">
+	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+	<link rel="stylesheet" href="css/workout.css">
+
+</head>
+<body>
+
+	<div id="container">
+	
+	<!-- Mobile Nav --> 
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<!-- <a href="about.html">About Us</a> -->
+				<a href="classes.html">Workout</a>
+				<a href="nutrition.html">Nutrition</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+
+		<!-- Use the header area for the website name or logo -->
+
+		<header id="ffc-logo">
+			<a href="index.html"><img src="images/RVwhite.png" alt="Revamp Fitness logo"></a>
+		</header>
+
+
+		<!-- Tablet, Desktop Nav -->
+		<nav class="tablet-desktop">
+		<!-- <img  id="logo" src="images/RVwhite.png" alt="ReVamp Fitness"> -->
+
+			<ul>
+				<li><a href="index.html">Home</a></li> 
+				<!-- <li><a href="about.html">About Us</a></li>  -->
+				<li><a href="classes.html">Workout</a></li> 
+				<li><a href="nutrition.html">Nutrition</a></li> 
+				<li><a href="contact1.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<!-- Nutrition Hero Image --> 
+		<div id="hero">
+			<img class="veggies" src="images/hero-veggies.jpg" alt="fresh vegetables">
+		</div>
+		
+		<!-- Use the main area to add the main content of the webpage -->
+		<main class="grid">
+		
+			<article>
+				<h3>Food for Thought</h3>
+				<img src="images/food-thought.jpg" alt="food for thought image" class="round">
+				<p>Good nutrition is a lifestyle, not a diet. It starts with a new way of thinking about food. Think of your body as a vehicle that uses food for fuel. Fill your tank with the right type of fuel.</p>
+				<p>Do not approach your nutrition plan as a diet plan, but rather, a lifestyle change. If you make a permanent change, you will see big results. The key to success is a daily focus on your goal.</p> 
+				<p>Portion your meals and track your calories. There are many free mobile apps available to help track your activity level and calories.</p>
+				<p>Control impulsive urges to buy junk food, and instead, allow yourself to one "cheat" meal a week.</p>
+			</article>
+			
+			<article>
+				<h3>What to Eat</h3>
+				<img src="images/fresh-food.jpg" alt="fresh vegetables, fruit, eggs, and nuts" class="round">
+				<p>Use the following as a guideline:</p>
+				<ul>
+					<li>Protein, such as eggs, chicken, and lean red meat</li>
+					<li>Vegetables, but avoid corn and peas</li>
+					<li>Fruit</li>
+					<li>Fat, such as olive oil, nuts, and seeds</li>
+					</ul>
+				<p>Limit the consumption of bread, pasta, white potatoes, and processed food. These foods are high in carbohydrates.</p>
+				<p>When you shop for groceries, shop the outside aisles and buy organic when possible. Stock up on fresh vegetables, almond flour, and flax seed.</p>
+				<p>Check out our Meal of the Week for new meal ideas.</p>
+			</article>
+			
+			
+<section class ="rowss">
+	<h1 class="topfood">Choose your meal!</h1>
+    <div class="container">
+        <button class="button-primary" id="get_meal">Breakfast</button>
+        <button type="reset" id="reset" class ="reset">close</button>
+      <div id="meal" class="row-meal"></div>
+    </div>
+
+<div class="container">
+    <button class="button-primary" id="get_lunch">Lunch</button>
+    <button type="reset" id="reset1" class ="reset">close</button>
+  <div id="lunch" class="row-meal"></div>
+</div>
+
+<div class="container">
+    <button class="button-primary" id="get_dinner">Dinner</button>
+    <button type="reset" id="reset2" class ="reset">close</button>
+  <div id="dinner" class="row-meal"></div>
+</div>
+
+<div class="container">
+    <button class="button-primary" id="get_snack">Dessert</button>
+    <button type="reset" id="reset3" class ="reset">close</button>
+  <div id="snack" class="row-meal"></div>
+</div>
+</section>
+			
+			<aside class="tablet-desktop grid-item4">
+				<p>Did you know the average American consumes 3 lbs of sugar each week?</p>
+				<p>Did you know that avocados are a good source of Vitamin B?</p>
+				<p>Did you know the average active adult should consume about 2,0000 calories a day?</p>
+			</aside>
+		
+		</main>
+		
+		<!-- Use the footer area to add webpage footer content -->
+		<footer>
+		
+			<div class="copyright">
+				<p>&copy; Copyright 2021. All Rights Reserved.</p>
+				<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+			</div>
+			
+			<!-- <div class="social">
+				<a href="https://www.facebook.com/fwdfitclub" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+				<a href="https://twitter.com/fwdfitclub" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+			</div> -->
+			
+		</footer>
+	
+	</div>
+	<script src="scripts/script.js"></script>
+	
+</body>
+</html>

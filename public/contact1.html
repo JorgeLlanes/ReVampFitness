@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- * NAV -->
+	<nav class="nav">
+		<div class="logo">
+			<img src="images/RVwhite.png" alt="logo">
+		</div>
+			<ul class="nav-links">
+				<li>
+					<a href="index.html">Home</a>
+				</li> 
+
+	
+				<li>
+					<a href="classes.html">Workout Plans</a>
+				</li> 
+				<li>
+					<a href="nutrition.html">Nutrition</a>
+				</li> 
+					<a href="contact1.html">Contact Us</a>
+				</li>
+			</ul>
+
+	</nav>
+<!-- * NAV -->
+    <main>
+		
+		<div id="contact">
+		
+			<h2>Ready to get started? Contact us today.</h2>
+			<h4 class="num">(800)-222-2222</h4>
+			<h4>Email us: <a href="https://www.roadtohire.org/" class="contact-email-link">ReVampFitness@gmail.com</a></h4>
+			<h4>1101 Red Ventures Dr, Fort Mill, SC 29707</h4>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.022017095807!2d-80.8482222847276!3d35.00615397430507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856832c57f0fc87%3A0xbd566135231a2a0b!2sRed%20Ventures!5e0!3m2!1sen!2sus!4v1656862466918!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" class="map"></iframe>
+		</div>
+		
+		<div id="form">
+		
+			<h2>Complete the form below to begin your free trail.</h2>
+		
+		<form class="form-flex" action="/contact" method="POST"> 
+		
+			<fieldset>
+				<legend>Customer Information</legend>
+				<label for="fName">First Name:</label>
+				<input type="text" name="fName" id="fName" placeholder="Ex: Darth" required>
+				
+				<label for="fName">Last Name:</label>
+				<input type="text" name="lName" id="lName" placeholder="Ex: Vader" required>
+				
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" placeholder="DarkSide@Gmail.com" required>
+				
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" placeholder="(123) 555-5555" required>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Additional Information</legend>
+				<p>I would like more information about:</p>
+				
+				<label for="grpfit"><input type="checkbox" name="interest1" id="grpfit" value="Workouts">Workouts</label>
+				
+				<label for="prtrain"><input type="checkbox" name="interest2" id="prtrain" value="Meals">Meals</label>
+				
+				<label for="nutr"><input type="checkbox" name="interest3" id="nutr" value="Nutrition">Nutrition</label>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Referral Source</legend>
+				<label for="reference">How did you find us?</label>
+				<select name="reference" id="reference">
+					<option value="ad">Advertisement</option>
+					<option value="friend">Friend</option>
+					<option value="google">Google</option>
+					<option value="social">Social Media</option>
+					<option value="other">Other</option>
+				</select>
+				
+				<label for="questions">Questions?</label>
+				<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+				
+				<label for="promo">Promo Code:</label>
+				<input type="text" id="promo" name="promo">
+			</fieldset>
+			
+			<input type="submit" id="submit" value="Submit" class="btn">
+
+		</form>
+			
+		</main>
+
+			<hr>
+
+		<footer>
+			<div class="footer">
+				<a href="index.html">Home</a>
+				<a href="classes.html">Workout Plans</a>
+				<a href="nutrition.html">Nutrition</a> 
+
+				<!-- <a href="about.html">About US</a>  -->
+=======
+				<a href="about.html">About US</a> 
+
+				<a href="contact1.html">Contact</a> 
+			</div>
+
+			<div class="copyright">@2022 ReVampFitness</div>
+		
+		</footer>
+	
+	<script src="scripts/script.js"></script>
+    
+</body>
+</html>
