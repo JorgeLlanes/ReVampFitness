@@ -39,11 +39,8 @@ To stop running the server and the app hit **```Control + C```** that should sto
 ### **_Home page_**
 ![Screenshot (36)](WebSiteSS/Home.png)
 
-### **_Workout page_**
-![Screenshot (37)]()
-
 ### **_Nutrition page_**
-![Screenshot (38)]()
+![Screenshot (38)](WebSiteSS/Nutrition.png)
 
 ### **_Contact page_**
 ![Screenshot (39)](WebSiteSS/Contact.png)
