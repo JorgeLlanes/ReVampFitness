@@ -9,10 +9,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 //* Connection to MongoDB and Testing it
-mongoose.connect("", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  "mongodb+srv://Jnrlns:741203Jll1998@cluster0.uh93i.mongodb.net/Database",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
+
+const newTask = {
+  excer: String,
+  setx: String,
+  sety: String,
+};
 
 const submitSchema = mongoose.Schema({
   fName: String,
@@ -27,8 +36,10 @@ const submitSchema = mongoose.Schema({
   promo: String,
 });
 
+const tasks = mongoose.model("tasks", newTask);
 const submitForm = mongoose.model("submitForm", submitSchema);
 
+//* Create w/ MongoDB
 app.post("/contact", (req, res) => {
   let newSubmitForm = new submitForm({
     fName: req.body.fName,
@@ -43,47 +54,56 @@ app.post("/contact", (req, res) => {
     promo: req.body.promo,
   });
   newSubmitForm.save();
-  res.redirect("/contact.html");
+  res.redirect("/contact1.html");
 });
 
-// var db = mongoose.connection;
+//* Create w/ MongoDB
+app.post("/", (req, res) => {
+  let taskOne = new tasks({
+    excer: req.body.excer,
+    setx: req.body.setx,
+    sety: req.body.sety,
+  });
+  taskOne.save();
+  // res.redirect("/classes.html");
+});
 
-// db.on("error", () => console.log("Error in connecting to Database"));
-// db.once("open", () => console.log("Connected to Database"));
+//* READ w/ MongoDB Postman  (R.E.S.T API)
+app.get("/listtask", (req, res) => {
+  tasks.find(function (err, response) {
+    if (err) {
+      throw err;
+    } else {
+      res.send({ status: 200, message: response });
+    }
+  });
+});
 
-// app.post("/contact", (req, res) => {
-//   var fName = req.body.fName;
-//   var lName = req.body.lName;
-//   var email = req.body.email;
-//   var phone = req.body.phone;
-//   var interest1 = req.body.interest1;
-//   var interest2 = req.body.interest2;
-//   var interest3 = req.body.interest3;
-//   var reference = req.body.reference;
-//   var questions = req.body.questions;
-//   var promo = req.body.promo;
+//* UPDATE w/ MongoDB Postman
+app.put("/update", (req, res) => {
+  const id = req.query.id;
+  const newExcer = req.query.excer;
+  tasks.findByIdAndUpdate(id, { excer: newExcer }, function (err, response) {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send({ status: 200, tasks: response });
+    }
+  });
+});
 
-//   var data = {
-//     fName: fName,
-//     lName: lName,
-//     email: email,
-//     phone: phone,
-//     interest1: interest1,
-//     interest2: interest2,
-//     interest3: interest3,
-//     reference: reference,
-//     questions: questions,
-//     promo: promo,
-//   };
+//! DELETE w/ MongoDB Postman
+app.delete("/deleteTask", function (req, res) {
+  const id = req.query.id;
 
-//   db.collection("user").insertOne(data, (err, collection) => {
-//     if (err) {
-//       throw err;
-//     }
-//     console.log("Recored inserted Successfully");
-//   });
-//   return res.redirect("contact.html");
-// });
+  tasks.findByIdAndDelete(id, function (err, response) {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send({ status: 200, task: response });
+    }
+  });
+});
 
 app.get("/", (req, res) => {
   res.set({

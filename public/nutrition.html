@@ -5,13 +5,15 @@
 	<title>Nutrition Guidance | Forward Fitness Club</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/nutrition.css">
 	<meta name="description" content="Forward Fitness Club provides nutrition guides and meal planning to help you meet your nutrition goals.">
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+	<link rel="stylesheet" href="css/workout.css">
+
 </head>
 <body>
 
@@ -33,6 +35,10 @@
 
 		<!-- Use the header area for the website name or logo -->
 
+		<header id="ffc-logo">
+			<a href="index.html"><img src="images/RVwhite.png" alt="Revamp Fitness logo"></a>
+		</header>
+
 
 		<!-- Tablet, Desktop Nav -->
 		<nav class="tablet-desktop">
@@ -43,13 +49,13 @@
 				<!-- <li><a href="about.html">About Us</a></li>  -->
 				<li><a href="classes.html">Workout</a></li> 
 				<li><a href="nutrition.html">Nutrition</a></li> 
-				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="contact1.html">Contact Us</a></li>
 			</ul>
 		</nav>
 		
 		<!-- Nutrition Hero Image --> 
 		<div id="hero">
-			<img src="images/hero-veggies.jpg" alt="fresh vegetables">
+			<img class="veggies" src="images/hero-veggies.jpg" alt="fresh vegetables">
 		</div>
 		
 		<!-- Use the main area to add the main content of the webpage -->
@@ -79,22 +85,33 @@
 				<p>Check out our Meal of the Week for new meal ideas.</p>
 			</article>
 			
-			<article>
-				<h3>Meal of the Week</h3>
-				<img src="images/food-chicken.jpg" alt="herb roasted chicken" class="round">
-				<h4>Herb Roasted Chicken</h4>
-				<h4>Ingredients:</h4>
-				<ul>
-					<li>boneless, skinless chicken breast (organic preferred)</li>
-					<li>1 tsp Herbes de Provence</li>
-					<li>1 tsp lemon juice</li>
-					<li>1 tsp olive oil</li>
-					<li>1 tsp sea salt</li>
-					<li>&frac14; tsp pepper</li>
-				</ul>
-				<h4>Instructions:</h4>
-				<p>Combine all ingredients in a plastic bag and marinate for at least an hour. Preheat oven to 350 degrees. Bake chicken for 30-35 minutes or until juices run clear. Broil on high for two minutes or until brown. Serve with a fresh side salad.</p>
-			</article>
+			
+<section class ="rowss">
+	<h1 class="topfood">Choose your meal!</h1>
+    <div class="container">
+        <button class="button-primary" id="get_meal">Breakfast</button>
+        <button type="reset" id="reset" class ="reset">close</button>
+      <div id="meal" class="row-meal"></div>
+    </div>
+
+<div class="container">
+    <button class="button-primary" id="get_lunch">Lunch</button>
+    <button type="reset" id="reset1" class ="reset">close</button>
+  <div id="lunch" class="row-meal"></div>
+</div>
+
+<div class="container">
+    <button class="button-primary" id="get_dinner">Dinner</button>
+    <button type="reset" id="reset2" class ="reset">close</button>
+  <div id="dinner" class="row-meal"></div>
+</div>
+
+<div class="container">
+    <button class="button-primary" id="get_snack">Dessert</button>
+    <button type="reset" id="reset3" class ="reset">close</button>
+  <div id="snack" class="row-meal"></div>
+</div>
+</section>
 			
 			<aside class="tablet-desktop grid-item4">
 				<p>Did you know the average American consumes 3 lbs of sugar each week?</p>
@@ -112,15 +129,14 @@
 				<p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
 			</div>
 			
-			<div class="social">
+			<!-- <div class="social">
 				<a href="https://www.facebook.com/fwdfitclub" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
 				<a href="https://twitter.com/fwdfitclub" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
-			</div>
+			</div> -->
 			
 		</footer>
 	
 	</div>
-	
 	<script src="scripts/script.js"></script>
 	
 </body>
