@@ -154,6 +154,18 @@ const createSnack = (meal) => {
   meal_containerrrr.innerHTML = newInnerHTML;
 }
 
+//Function to display a promo code
+function discount() {
+	var promo = document.getElementById("special");
+	promo.firstChild.nodeValue = "Promo Code: D25START";
+	promo.style.color = "#ff0000";
+	promo.style.fontSize = "2em";
+
+}
+
+}
+
+
 
 
 const reset = document.getElementById('reset');
@@ -179,3 +191,4 @@ const reset3 = document.getElementById('reset3');
 reset3.addEventListener('click', () => {
     meal_containerrrr.innerHTML = null
 })
+
