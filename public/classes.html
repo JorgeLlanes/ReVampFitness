@@ -2,7 +2,7 @@
 <!-- This website template was created by: Christopher Deleon, October 13, 2021 -->
 <html lang="en">
 <head>
-	<title>Fitness Class Schedule | Forward Fitness Club</title>
+	<title>ReVamp Fitnes</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/styles.css">
@@ -25,7 +25,7 @@
 			<div id="menu-links">
 				<a href="index.html">Home</a>
 				<a href="about.html">About Us</a>
-				<a href="classes.html">W</a>
+				<a href="classes.html">Classes</a>
 				<a href="nutrition.html">Nutrition</a>
 				<a href="contact.html">Contact Us</a>
 			</div>
@@ -51,158 +51,44 @@
 		</nav>
 		
 		<!-- Classes Hero Image -->
-		<div id="hero" class="tablet-desktop">
-			<img src="images/classes-hero-image.jpg" alt="group of fitness people">
+		<div id="hero" class="heroimg">
+			<img src="images/yessir.webp" alt="group of fitness people">
 		</div>
 		
 		<!-- Use the main area to add the main content of the webpage -->
-		<div class="fitness-services">
-			<div class="fitness-heading">
-
-				<p>Our staff includes amazing professionals that have an eye for crossfit.</p>
-		
-			</div>
-		   
-			<div class="fitness-main-service">
-				<div class="fitness-inner-content">
-					<div class="fitness-images">
-						<img src="images/welcome images2.png" alt="">
-					</div>
-					<div class="fitness-inner-headings">
-						<h1>Weight Lifting</h1>
-						<p>Our staff includes amazing professionals that have an eye for crossfit.</p>
-					<button class="fitness-btn">get in touch</button>
-					</div>
-					
-				</div>
-	
-				<div class="fitness-inner-content">
-					<div class="fitness-images">
-						<img src="images/welcome images.png" alt="">
-					</div>
-					<div class="fitness-inner-headings">
-						<h1>Cardio</h1>
-						<p>Our staff includes amazing professionals that have an eye for crossfit.</p>
-					<button class="fitness-btn">get in touch</button>
-					</div>
-				</div>
-	
-				<div class="fitness-inner-content">
-					<div class="fitness-images">
-						<img src="images/welcom images3.png" alt="">
-					</div>
-					<div class="fitness-inner-headings">
-						<h1>Yoga</h1>
-						<p>Our staff includes amazing professionals that have an eye for crossfit.</p>
-					<button class="fitness-btn">get in touch</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- <div class="tablet-desktop"> -->
-<!-- 		
-			<table> 
-				<caption>Group Fitness Class Schedule</caption>
-				<tr>
-					<th>Class</th>
-					<th>Days</th>
-					<th>Times</th>
-					<th>Instructor</th>
-					<th>Room</th>
-				</tr>
-				<tr> 
-					<td>Cardio</td>
-					<td>Mon, Wed, Fri</td>
-					<td>6:00am, 6:00pm</td>
-					<td>Schultz</td>
-					<td>B</td>
-				</tr>
-				<tr>
-					<td>Boot Camp</td>
-					<td>Tue, Thu</td>
-					<td>5:00am, 5:00pm</td>
-					<td>Taylor</td>
-					<td>B</td>
-				</tr>
-				<tr>
-					<td>Spinning</td>
-					<td>Tue, Thu</td>
-					<td>6:00am, 6:00pm</td>
-					<td>Roberts</td>
-					<td>A</td>
-				</tr>
-				<tr>
-					<td>Kickboxing</td>
-					<td>Mon, Wed, Fri</td>
-					<td>8:00am, 7:15pm</td>
-					<td>Lawrence</td>
-					<td>A</td>
-				</tr>
-				<tr>
-					<td>Yoga</td>
-					<td>Tue, Thu</td>
-					<td>6:00am, 6:00pm</td>
-					<td>Schultz</td>
-					<td>B</td>
-				</tr>
-				<tr>
-					<td>Zumba</td>
-					<td>Mon, Wed, Fri</td>
-					<td>7:00am, 6:00pm</td>
-					<td>Roberts</td>
-					<td>A</td>
-				</tr>
-			</table>
 			
-		</div> -->
-		<!-- // Chris -->
-		<!-- <div class="center">
-			<button id=""show-login">Login</button>
-		</div>
-		<div class="popup">
-			<div class="close-btn">&times;</div>
-			<div class="form">
-				<h2>Log in</h2>
-				<div class="form-element">
-					<label for="email">Email</label>
-					<input type="text" id="email" placeholder="Enter email">
+			<h1 class="heading">Choose a workout</h1>
+			<section class ="row">
+				<div class="container">
+					<button class="button-primary" id="get_chest">Chest Workouts</button>
+					<button type="reset" id="reset" class ="reset">Reset</button>
+				  <div id="chest" class="row-chest"></div>
 				</div>
-				<div class="form-element">
-					<label for="password">Password</label>
-					<input type="password" id="password" placeholder="Enter password">
-				</div>
-				<div class="form-element">
-					<input type="checkbox" id="remember-me">
-					<label for="remember-me">Remember me</label>
-				</div>
-				<div class="form-element">
-					<button>Sign in</button>
-				</div>
-				<div class="form-element">
-					<a href="#">Forgot password</a>
-				</div>
-			</div>
-		</div> -->
-
-
-
-
-
-
-
-		<div id="music-sample">
-		
-			<h3>We play upbeat music to help keep you focused during your workout. Below is a sample of the type of music played during a class workout.</h3>
-			<audio controls>
-				<source src="media/ffc_audio.mp3" type="audio/mp3">
-				<source src="media/ffc_audio.oog" type="audio/oog">
-				<p>Your browser does not support the audio element.</p>
-			</audio>
 			
-		</div>
-		
-		</main>
+				<div class="container">
+					<button class="button-primary" id="get_back">Back Workouts</button>
+					<button type="reset" id="reset1" class ="reset">Reset</button>
+				  <div id="back" class="row-back"></div>
+				</div>
+			
+				<div class="container">
+					<button class="button-primary" id="get_legs">Leg Workouts</button>
+					<button type="reset" id="reset2" class ="reset">Reset</button>
+				  <div id="legs" class="row-legs"></div>
+				</div>
+			
+				<div class="container">
+					<button class="button-primary" id="get_arms">Arm Workouts</button>
+					<button type="reset" id="reset3" class ="reset">Reset</button>
+				  <div id="arms" class="row-arms"></div>
+				</div>
+			
+				<div class="container">
+					<button class="button-primary" id="get_cardio">Cardio Workouts</button>
+					<button type="reset" id="reset4" class ="reset">Reset</button>
+				  <div id="cardio" class="row-cardio"></div>
+				</div>
+			</section>
 
 		
 		<!-- /// Jorge -->
@@ -247,7 +133,7 @@
 	
 	</div>
 	
-	<script src="scripts/script.js"></script>
+	<script src="scripts/ismael.js"></script>
 	<script src="scripts/jorge.js"></script>
 	
 </body>
